@@ -16,7 +16,7 @@ import BookTicket from "../pages/bookTicket/BookTicket"
 import Pay from "../pages/bookTicket/Pay"
 import MoMo from "../pages/bookTicket/MoMo"
 import Cinema from '../pages/cinema/Cinema'
-import NotFound from "../pages/NotFound/NotFound"
+import NotFound from "../pages/notFound/NotFound"
 import About from "../pages/about/About"
 import Term from "../pages/term/Term"
 import TermsUse from "../pages/termsUse/TermsUse"
