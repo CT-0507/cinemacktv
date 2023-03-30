@@ -24,7 +24,7 @@ import Contact from "../pages/contact/Contact"
 import UserMenu from '../pages/admin/User'
 import FilmMenu from "../pages/admin/Film"
 import PaymentPolicy from '../pages/paymentPolicy/PaymentPolicy'
-import FAQ from '../pages/faq/fag'
+import FAQ from '../pages/faq/faq'
 import AccountLayout from '../components/layout/accountLayout/AccountLayout'
 import AdminLayout from '../components/layout/adminLayout/adminLayout'
 import AdminPrefetch from "../pages/admin/adminPrefetch"
