@@ -17,6 +17,7 @@ import './movieDescription.css'
 import { useEffect, memo } from 'react'
 import { useSelector } from 'react-redux';
 import { selectFilmBySlug } from '../admin/filmsApi/filmsApiSlice';
+import { ROOT_URL } from '../../config/rootURL';
 const MoviesDescription = memo(() => {
     const { slug } = useParams()
     const film = useSelector(state => selectFilmBySlug(state, slug))
@@ -36,10 +37,10 @@ const MoviesDescription = memo(() => {
                             isFluidWidth: isTablet,
                             width: 300,
                             height: 450,
-                            src: `http://localhost:3500/${film?.poster}`
+                            src: `${ROOT_URL}/${film?.poster}`
                         },
                         largeImage: {
-                            src: `http://localhost:3500/${film?.poster}`,
+                            src: `${ROOT_URL}/${film?.poster}`,
                             width: 1200,
                             height: 1800,
 

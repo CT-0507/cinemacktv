@@ -17,6 +17,7 @@ import PlayTrailer from '../../../components/playTrailer/PlayTrailer'
 
 import Spinner from "react-bootstrap/Spinner";
 import { useSelector } from "react-redux";
+import { ROOT_URL } from "../../../config/rootURL";
 function SlickMovie() {
     let settings = {
         dots: true,
@@ -100,7 +101,7 @@ const FilmItem = ({ filmId }) => {
             <div className="item">
                 <Card style={{ width: '18rem', }} className="card-film">
                     <Link to={`/movie-description/${film.slug}`}>
-                        <Card.Img variant="top" style={{ height: '415px' }} src={`http://localhost:3500/${film.poster}`} />
+                        <Card.Img variant="top" style={{ height: '415px' }} src={`${ROOT_URL}/${film.poster}`} />
                     </Link>
 
 

@@ -16,6 +16,7 @@ import PlayTrailer from '../../components/playTrailer/PlayTrailer'
 import { useEffect, memo } from 'react'
 import { useSelector } from 'react-redux';
 import { selectActiveFilm } from '../admin/filmsApi/filmsApiSlice';
+import { ROOT_URL } from '../../config/rootURL';
 const Movies = memo(() => {
     const { pathname } = useLocation()
     const option = pathname.includes("nearly") ? "nearly air" : "airing"
@@ -31,7 +32,7 @@ const Movies = memo(() => {
                 {AiringFilm.map((item, idx) => (
                     <Col key={idx}>
                         <Card >
-                            <Link to={`/movie-description/${item.id}`}> <Card.Img variant="top" src={`http://localhost:3500/${item.poster}`}style={{width:'100%' , height:'415px'}} /></Link>
+                            <Link to={`/movie-description/${item.id}`}> <Card.Img variant="top" src={`${ROOT_URL}/${item.poster}`} style={{ width: '100%', height: '415px' }} /></Link>
                             <Card.Body>
                                 <Card.Title className='word-wrap'>{item.filmName}</Card.Title>
                                 <Card.Text className='word-wrap'>
@@ -46,7 +47,7 @@ const Movies = memo(() => {
                                         </Link>
                                     </Col>
                                     <Col>
-                                        <Link to ='/show-times'>
+                                        <Link to='/show-times'>
                                             <ButtonTicket variant="primary"></ButtonTicket>
                                         </Link>
                                     </Col>

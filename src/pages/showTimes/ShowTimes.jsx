@@ -22,6 +22,7 @@ import { useSelector } from 'react-redux';
 import { selectFilmBySlug, selectFilmOption } from '../admin/filmsApi/filmsApiSlice';
 import { selectCinemaById, useGetCinemasQuery } from '../admin/cinemasApi/cinemasApiSlice';
 import { selectPremiereSlotById, selectSlotsOption, useGetPremiereSlotsQuery } from '../admin/premiereSlotsApi/premiereSlotsApiSlice';
+import { ROOT_URL } from '../../config/rootURL';
 const ShowTimes = memo(() => {
     const [searchParams] = useSearchParams();
     const filmSlug = searchParams.get('film')
@@ -125,7 +126,7 @@ const ShowTimes = memo(() => {
             </Row>
             <Row>
                 <Col sm={12} xs={12} md={12} lg={3}>
-                    {film && <img className='img-show-times mt-4' style={{ width: '100%' }} src={`http://localhost:3500/${film?.poster}`}></img>}
+                    {film && <img className='img-show-times mt-4' style={{ width: '100%' }} src={`${ROOT_URL}/${film?.poster}`}></img>}
                 </Col>
                 <Col sm={9} xs={12}>
                     {availbleSlot}
