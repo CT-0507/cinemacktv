@@ -1,0 +1,42 @@
+
+.slick-prev:before, .slick-next:before {
+    font-size:40px;
+    color:red;
+
+}
+.item{
+    /* border: 1px solid black; */
+}
+
+.card-film{
+    margin:auto;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .slick-prev{
+        left: 40px!important;
+        position: absolute!important;
+        z-index: 2!important;
+    
+    }
+    .slick-next {
+        right:50px !important;
+        position: absolute!important;
+        z-index: 3!important;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    
+    .slick-next {
+        right:0px !important;
+    }
+  }
+  /* @media only screen and (max-width: 300px) {
+    
+    .slick-next {
+        right:50px !important;
+        position: absolute!important;
+        z-index: 3!important;
+    }
+  } */

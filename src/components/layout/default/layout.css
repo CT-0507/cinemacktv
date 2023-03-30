@@ -1,0 +1,111 @@
+:root {
+    --header-baner--width: 119px;
+}
+.cusNavbar {
+    background-color: antiquewhite;
+    height: fit-content !important;
+}
+.nav-link i {
+    margin-right: 8px;
+}
+.languageToggle {
+    border-radius: 5px;
+    background-color: gray;
+    padding: 0px 5px;
+}
+.languageToggle .btn-active {
+    background-color: red;
+}
+.languageToggle button {
+    background: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 2px;
+}
+.header-banner {
+    background: url('../../../img/bg-top.png');
+    height: var(--header-baner--width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-banner a img:hover,
+.header-banner__mobile a img:hover {
+    /* background-color: gray; */
+
+
+}
+.logo-header img :hover {
+    background-color:none;
+}
+.header-banner .li-header{
+    background-color:#fdf7dc;
+    
+}
+.navbar .subnav:hover,
+.navbar .subnav:active {
+    background-color: gray;
+}
+.box{
+
+    background:grey;
+    border: 2px solid black;
+
+}
+.text-nav{
+    color:white;
+    font-weight:bold;   
+    padding:10px;
+    border: 1px;
+
+}
+.text-nav:hover{
+    color:rgb(94, 5, 5);
+    border:1px solid black;
+}
+.header-banner__mobile {
+    background-color: antiquewhite;
+    height: 70px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container .fa{
+    font-size:50px;
+}
+.footer-container .fa-facebook-official {
+    color:blue
+
+}
+.footer-container .fa-youtube-square {
+    color:red
+
+}
+.footer-container .fa-instagram{
+    color: #f09433; 
+    color: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    color: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    color: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    
+}
+.footer-container .fa-imdb{
+    color: #f09433;
+}
+.footer-container .fa-heart{
+    color: red
+}
+@media only screen and (max-width: 768px) {
+    .d-none-tablet {
+        display: none!important;
+    }
+}
+.ul-nav {
+    list-style-type: none;
+}
+@media  only screen and (min-width:995px){
+    .bg-gradient {
+        display:none !important;
+    }
+    
+}
