@@ -18,7 +18,7 @@ import MoMo from "../pages/bookTicket/MoMo"
 import Cinema from '../pages/cinema/Cinema'
 import NotFound from "../pages/notFound/NotFound"
 import About from "../pages/about/About"
-import Term from "../pages/term/Term"
+import Term from "../pages/term/term"
 import TermsUse from "../pages/termsUse/TermsUse"
 import Contact from "../pages/contact/Contact"
 import UserMenu from '../pages/admin/User'
